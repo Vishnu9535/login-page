@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+<div class="main-w3layouts wrapper">
+<h1>Creative SignUp Form</h1>
+<div class="main-agileinfo">
+    <div class="agileits-top">
+        <form action="" method="POST">    
+        {% csrf_token %}
+        <p>username :</p>{{form.username}}<br>
+         <p>Password :</p>{{form.password1}}<br>
+        <p>Retype Password :</p>{{form.password2}}<br>
+        <ul>
+        <li>{{form.errors}}</li>
+        </ul>
+        <input type="submit" value="SIGNUP">
+
+        
+        </form>
+        <p>Do you have an Account? <a href="{% url 'login' %}"> Login
+        Now!</a></p>
+        </div>
+        </div>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+<!-- //main -->
+</body>
+</html>
